@@ -12,7 +12,6 @@
 # license that conforms to the Open Source Definition (Version 1.9)
 # published by the Open Source Initiative.
 
-
 %define sca_common sca
 %define patdirbase /usr/lib/%{sca_common}
 %define patdir %{patdirbase}/patterns
@@ -35,7 +34,7 @@ Buildarch:    noarch
 
 %description
 Supportconfig Analysis (SCA) appliance patterns to identify known
-issues relating to all versions of SLES 15. 
+issues relating to all versions of SLE15. 
 
 See %{_docdir}/sca-patterns-base/COPYING.GPLv2
 
