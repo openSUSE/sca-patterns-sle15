@@ -37,7 +37,7 @@ Buildarch:    noarch
 Supportconfig Analysis (SCA) appliance patterns to identify known
 issues relating to all versions of SLES 15. 
 
-Refer to %{_docdir}/sca-patterns-base/COPYING.GPLv2
+See %{_docdir}/sca-patterns-base/COPYING.GPLv2
 
 %prep
 %setup -q
