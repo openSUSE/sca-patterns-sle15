@@ -77,6 +77,11 @@ install -m %{mode} patterns/%{category}/sle15sp4/* %{buildroot}/%{patdir}/%{cate
 %attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle15sp2/*
 %attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle15sp3/*
 %attr(%{mode},%{patuser},%{patgrp}) %{patdir}/%{category}/sle15sp4/*
+%attr(444,%{patuser},%{patgrp}) %{patdir}/%{category}/sle15sp0/README
+%attr(444,%{patuser},%{patgrp}) %{patdir}/%{category}/sle15sp1/README
+%attr(444,%{patuser},%{patgrp}) %{patdir}/%{category}/sle15sp2/README
+%attr(444,%{patuser},%{patgrp}) %{patdir}/%{category}/sle15sp3/README
+%attr(444,%{patuser},%{patgrp}) %{patdir}/%{category}/sle15sp4/README
 
 %clean
 rm -rf %{buildroot}
