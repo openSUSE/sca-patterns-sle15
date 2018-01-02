@@ -83,8 +83,5 @@ install -m %{mode} patterns/%{category}/sle15sp4/* %{buildroot}/%{patdir}/%{cate
 %attr(444,%{patuser},%{patgrp}) %{patdir}/%{category}/sle15sp3/README
 %attr(444,%{patuser},%{patgrp}) %{patdir}/%{category}/sle15sp4/README
 
-%clean
-rm -rf %{buildroot}
-
 %changelog
 
