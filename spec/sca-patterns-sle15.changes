@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Mon Nov 16 22:17:34 UTC 2020 - jason.record@suse.com
+
+- Removed obsolete README place holders in sp0-2
+
+-------------------------------------------------------------------
 Mon Nov 19 19:31:33 UTC 2018 - jason.record@suse.com
 
 - Added openssh-7023532.py to detect bsc#1115654
