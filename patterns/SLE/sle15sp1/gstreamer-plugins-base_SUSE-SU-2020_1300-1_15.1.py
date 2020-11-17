@@ -1,0 +1,124 @@
+#!/usr/bin/python
+#
+# Title:       Important Security Announcement for gstreamer-plugins-base SUSE-SU-2020:1300-1
+# Description: Security fixes for SUSE Linux Enterprise 15 SP1
+# Source:      Security Announcement Parser v1.5.2
+# Modified:    2020 Nov 16
+#
+##############################################################################
+# Copyright (C) 2020 SUSE LLC
+##############################################################################
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; version 2 of the License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, see <http://www.gnu.org/licenses/>.
+#
+#  Authors/Contributors:
+#   Jason Record (jason.record@suse.com)
+#
+##############################################################################
+
+import os
+import Core
+import SUSE
+
+META_CLASS = "Security"
+META_CATEGORY = "SLE"
+META_COMPONENT = "gstreamer-plugins-base"
+PATTERN_ID = os.path.basename(__file__)
+PRIMARY_LINK = "META_LINK_Security"
+OVERALL = Core.TEMP
+OVERALL_INFO = "NOT SET"
+OTHER_LINKS = "META_LINK_Security=https://lists.suse.com/pipermail/sle-security-updates/2020-May/006832.html"
+Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
+
+LTSS = False
+NAME = 'gstreamer-plugins-base'
+MAIN = ''
+SEVERITY = 'Important'
+TAG = 'SUSE-SU-2020:1300-1'
+PACKAGES = {}
+SERVER = SUSE.getHostInfo()
+
+if ( SERVER['DistroVersion'] == 15):
+	if ( SERVER['DistroPatchLevel'] == 1 ):
+		PACKAGES = {
+			'gstreamer-plugins-base': '1.12.5-3.3.1',
+			'gstreamer-plugins-base-32bit': '1.12.5-3.3.1',
+			'gstreamer-plugins-base-32bit-debuginfo': '1.12.5-3.3.1',
+			'gstreamer-plugins-base-debuginfo': '1.12.5-3.3.1',
+			'gstreamer-plugins-base-debugsource': '1.12.5-3.3.1',
+			'gstreamer-plugins-base-devel': '1.12.5-3.3.1',
+			'gstreamer-plugins-base-devel-32bit': '1.12.5-3.3.1',
+			'gstreamer-plugins-base-doc': '1.12.5-3.3.1',
+			'gstreamer-plugins-base-lang': '1.12.5-3.3.1',
+			'libgstallocators-1_0-0': '1.12.5-3.3.1',
+			'libgstallocators-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgstallocators-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgstallocators-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'libgstapp-1_0-0': '1.12.5-3.3.1',
+			'libgstapp-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgstapp-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgstapp-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'libgstaudio-1_0-0': '1.12.5-3.3.1',
+			'libgstaudio-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgstaudio-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgstaudio-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'libgstfft-1_0-0': '1.12.5-3.3.1',
+			'libgstfft-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgstfft-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgstfft-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'libgstpbutils-1_0-0': '1.12.5-3.3.1',
+			'libgstpbutils-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgstpbutils-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgstpbutils-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'libgstriff-1_0-0': '1.12.5-3.3.1',
+			'libgstriff-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgstriff-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgstriff-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'libgstrtp-1_0-0': '1.12.5-3.3.1',
+			'libgstrtp-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgstrtp-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgstrtp-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'libgstrtsp-1_0-0': '1.12.5-3.3.1',
+			'libgstrtsp-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgstrtsp-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgstrtsp-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'libgstsdp-1_0-0': '1.12.5-3.3.1',
+			'libgstsdp-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgstsdp-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgstsdp-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'libgsttag-1_0-0': '1.12.5-3.3.1',
+			'libgsttag-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgsttag-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgsttag-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'libgstvideo-1_0-0': '1.12.5-3.3.1',
+			'libgstvideo-1_0-0-32bit': '1.12.5-3.3.1',
+			'libgstvideo-1_0-0-32bit-debuginfo': '1.12.5-3.3.1',
+			'libgstvideo-1_0-0-debuginfo': '1.12.5-3.3.1',
+			'typelib-1_0-GstAllocators-1_0': '1.12.5-3.3.1',
+			'typelib-1_0-GstApp-1_0': '1.12.5-3.3.1',
+			'typelib-1_0-GstAudio-1_0': '1.12.5-3.3.1',
+			'typelib-1_0-GstFft-1_0': '1.12.5-3.3.1',
+			'typelib-1_0-GstPbutils-1_0': '1.12.5-3.3.1',
+			'typelib-1_0-GstRtp-1_0': '1.12.5-3.3.1',
+			'typelib-1_0-GstRtsp-1_0': '1.12.5-3.3.1',
+			'typelib-1_0-GstSdp-1_0': '1.12.5-3.3.1',
+			'typelib-1_0-GstTag-1_0': '1.12.5-3.3.1',
+			'typelib-1_0-GstVideo-1_0': '1.12.5-3.3.1',
+		}
+		SUSE.securityAnnouncementPackageCheck(NAME, MAIN, LTSS, SEVERITY, TAG, PACKAGES)
+	else:
+		Core.updateStatus(Core.ERROR, "ERROR: " + NAME + " Security Announcement: Outside the service pack scope")
+else:
+	Core.updateStatus(Core.ERROR, "ERROR: " + NAME + " Security Announcement: Outside the distribution scope")
+Core.printPatternResults()
+
