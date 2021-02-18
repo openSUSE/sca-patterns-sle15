@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Thu Feb 18 17:14:48 UTC 2021 - jason.record@gmail.com
+
+- Patter for TID000019637 - cpupower tool unable to read boost states for AMD Rome CPUs
+
+-------------------------------------------------------------------
 Tue Jan 26 18:47:03 UTC 2021 - jason.record@gmail.com
 
 - Pattern for TID000019825 - Graphic interface no longer working after patches
