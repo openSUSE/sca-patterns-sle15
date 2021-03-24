@@ -1,4 +1,15 @@
 -------------------------------------------------------------------
+Wed Mar 24 22:39:50 UTC 2021 - jason.record@gmail.com
+
+- New regular patterns (6) for version 1.0.1
+  + sle15sp2/openwsman-000019729.py: owsmangencert.sh generates error
+  + sle15sp2/lscpu-000019784-15.py: lscpu segfaults on IBM Power8 - Assertion failed
+  + sle15sp1/x710-000019639.py: Intel X710 based NIC is not detected
+  + sle15sp1/plymouth-000019595.py: plymouth hang - login to console not possible
+  + sle15sp1/lscpu-000019784-15.py: lscpu segfaults on IBM Power8 - Assertion failed
+  + sle15sp0/plymouth-000019595.py: plymouth hang - login to console not possible
+
+-------------------------------------------------------------------
 Thu Mar  4 03:25:51 UTC 2021 - jason.record@gmail.com
 
 - Changes to version 1.0.1
