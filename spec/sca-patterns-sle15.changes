@@ -1,6 +1,8 @@
 -------------------------------------------------------------------
-Wed Mar 31 20:57:24 UTC 2021 - Jason Record <jason.record@suse.com>
+Wed Mar 31 22:44:30 UTC 2021 - Jason Record <jason.record@suse.com>
 
+- Changes to version 1.0.1
+  + Mar 2021 New Security Announcement Patterns (19) for SUSE-SU-2021:0955-1 SUSE-SU-2021:0778-1 SUSE-SU-2021:0948-1 SUSE-SU-2021:0974-1 SUSE-SU-2021:0777-1 SUSE-SU-2021:0947-1 SUSE-SU-2021:0955-1 SUSE-SU-2021:0754-1 SUSE-SU-2021:0930-1 SUSE-SU-2021:0945-1 SUSE-SU-2021:0741-1 SUSE-SU-2021:0683-1 SUSE-SU-2021:0935-1 SUSE-SU-2021:0778-1 SUSE-SU-2021:0770-1 SUSE-SU-2021:0989-1 SUSE-SU-2021:0755-1 SUSE-SU-2021:0740-1 SUSE-SU-2021:0685-1
 - New regular patterns (4) for version 1.0.1
   + sle15all/gpgpubkey-000019712.py: zypper or rpm warns about unsupported V3 key after upgrade (bsc#1158913)
   + sle15all/rsyslog-000019710.py: no syslog service after upgrade (bsc#1158912)
