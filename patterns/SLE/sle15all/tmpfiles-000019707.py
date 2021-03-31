@@ -4,7 +4,7 @@
 # Description: systemd-tmpfiles-setup.service failed after upgrade from SLES 11 SP4 to SLES 15
 # Source:      Package Version Pattern Template v0.3.1
 # Options:     SLE,Services,TmpFiles,tmpfiles,000019707,1158911,2,0,0
-# Modified:    2021 Mar 30
+# Modified:    2021 Mar 31
 #
 ##############################################################################
 # Copyright (C) 2021 SUSE LLC
@@ -41,7 +41,7 @@ OVERALL_INFO = "NOT SET"
 OTHER_LINKS = "META_LINK_TID=https://www.suse.com/support/kb/doc/?id=000019707|META_LINK_BUG=https://bugzilla.suse.com/show_bug.cgi?id=1158911"
 Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, OVERALL, OVERALL_INFO, OTHER_LINKS)
 
-SERVICE = 'systemd-tempfiles-setup.service'
+SERVICE = 'systemd-tmpfiles-setup.service'
 ##############################################################################
 # Local Function Definitions
 ##############################################################################
@@ -80,7 +80,7 @@ if( serviceFailed() ):
 	else:
 		Core.updateStatus(Core.WARN, str(SERVICE) + " has failed, consider running systemd-sysuser")
 else:
-	Core.updateStatus(Core.ERROR, "The systemd-tempfiles-setup.service did not fail")
+	Core.updateStatus(Core.ERROR, "The " + str(SERVICE) + " did not fail")
 
 Core.printPatternResults()
 
