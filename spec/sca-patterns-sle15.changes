@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Wed Mar 31 20:57:24 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- New regular patterns (4) for version 1.0.1
+  + sle15all/gpgpubkey-000019712.py: zypper or rpm warns about unsupported V3 key after upgrade (bsc#1158913)
+  + sle15all/rsyslog-000019710.py: no syslog service after upgrade (bsc#1158912)
+  + sle15all/tmpfiles-000019707.py: systemd-tmpfiles-setup.service failed after upgrade (bsc#1158911)
+  + sle15all/zerologon-000019713.py: Zerologon aka CVE-2020-1472 (bsc#1176579)
+
+-------------------------------------------------------------------
 Fri Mar 26 13:31:07 UTC 2021 - jason.record@suse.com
 
 - New regular patterns (5) for version 1.0.1
