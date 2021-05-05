@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed May  5 15:41:13 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- New security announcement patterns (30) for version 1.0.3
+  + May 2021 (30) for SUSE-SU-2021:1182-1 SUSE-SU-2021:1430-1 SUSE-SU-2021:1168-1 SUSE-SU-2021:1408-1 SUSE-SU-2021:1409-1 SUSE-SU-2021:1182-1 SUSE-SU-2021:1028-1 SUSE-SU-2021:1166-1 SUSE-SU-2021:1430-1 SUSE-SU-2021:1113-1 SUSE-SU-2021:1444-1 SUSE-SU-2021:1280-1 SUSE-SU-2021:1243-1 SUSE-SU-2021:1168-1 SUSE-SU-2021:1408-1 SUSE-SU-2021:1094-1 SUSE-SU-2021:1029-1 SUSE-SU-2021:1238-1 SUSE-SU-2021:1409-1 SUSE-SU-2021:1006-1 SUSE-SU-2021:1161-1 SUSE-SU-2021:1108-1 SUSE-SU-2021:1282-1 SUSE-SU-2021:1179-1 SUSE-SU-2021:1153-1 SUSE-SU-2021:1445-1 SUSE-SU-2021:1244-1 SUSE-SU-2021:1292-1 SUSE-SU-2021:1103-1 SUSE-SU-2021:1455-1
+
+-------------------------------------------------------------------
 Tue May  4 20:23:01 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - New regular patterns (13) for version 1.0.3
