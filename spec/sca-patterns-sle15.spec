@@ -29,7 +29,7 @@ URL:          https://github.com/g23guy/sca-patterns-sle15
 Group:        System/Monitoring
 Source:       %{name}-%{version}.tar.gz
 BuildRequires: fdupes
-Requires:     sca-patterns-base
+Requires:     sca-patterns-base >= 1.3.2
 Buildarch:    noarch
 
 %description
