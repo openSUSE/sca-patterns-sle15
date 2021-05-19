@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed May 19 15:52:54 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Updated regular patterns (1)
+  + sle15all/lvm-00003.pl: Physical volumes can be removed or damaged and appear missing. This pattern looks for missing physical volumes.
+
+-------------------------------------------------------------------
 Tue May 18 21:41:12 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.0.3
