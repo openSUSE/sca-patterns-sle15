@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #
 # Title:       Pattern for TID000020260
-# Description: systemd-udevd[5511]: Could not generate persistent MAC address for br0: No such file or directory
+# Description: systemd-udevd Could not generate persistent MAC address for br0 No such file or directory
 # Source:      Basic Python Pattern Template v0.3.4
 # Options:     SLE,Network,MAC,udevmac,000020260,1185357,1,0,0
 # Modified:    2021 Jun 02
