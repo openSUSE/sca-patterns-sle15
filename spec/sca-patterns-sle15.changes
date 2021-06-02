@@ -1,4 +1,14 @@
 -------------------------------------------------------------------
+Wed Jun  2 22:13:41 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Changes in version 1.0.4
+  - New regular patterns (4)
+    + sle15all/nobarrier-000020240.py: XFS nobarrier option has been completely deprecated starting from SLES15 SP2 (bsc#1176375)
+    + sle15all/sysdjobs-000020261.py: Troubleshooting systemd jobs that are hung or stuck (TID000020261)
+    + sle15all/udevmac-000020260.py: systemd-udevd Could not generate persistent MAC address for br0 No such file or directory (bsc#1185357)
+    + sle15sp2/nfstimeout_152-000019943.py: Delayed outgoing packets causing NFS timeouts (bsc#1183405)
+
+-------------------------------------------------------------------
 Mon May 24 17:43:35 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.0.3
