@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Fri Jul  2 20:31:14 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Changes in version 1.0.6
+  - New regular patterns (3)
+    + sle15all/sdagentconfig-000020301.py: SCA Appliance configuration reports ERROR 2002 HY000 Cannot connect to MySQL server (bsc#1183464)
+    + sle15all/systemd-current-failed-7017137.py: Check for failed systemd services (TID7017137)
+    + sle15sp3/dasdkvm-000020295.py: DASD partitions not recognized on SLES 15 SP3 KVM guest (bsc#1185857)
+
+-------------------------------------------------------------------
 Fri Jun 18 17:25:06 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.0.5
