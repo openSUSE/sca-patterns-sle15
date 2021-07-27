@@ -38,8 +38,8 @@ import datetime
 # Overriden (eventually or in part) from Core.py Module
 ##############################################################################
 
-META_CLASS = "SLE"
-META_CATEGORY = "Updates"
+META_CLASS = "Basic Health"
+META_CATEGORY = "SLE"
 META_COMPONENT = "Registration"
 PATTERN_ID = os.path.basename(__file__)
 PRIMARY_LINK = "META_LINK_SCC"
