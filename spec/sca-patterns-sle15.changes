@@ -1,4 +1,15 @@
 -------------------------------------------------------------------
+Tue Aug 17 14:32:57 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Changes in version 1.0.7
+  - New regular patterns (5)
+    + sle15all/mysqlperf-000020354.py: mysqld segfault when the system is under stress (bsc#1186792)
+    + sle15all/oomvsftpd-000020252.py: vsftpd and other processes terminated due to OOM scenario (bsc#1182905)
+    + sle15all/postfix-000020356.py: Postfix fails to start with IPv6 disabled (TID000020356)
+    + sle15sp2/rpmnfs-000020364.py: Upgrading an RPM reports cpio chmod failed (bsc#1189394)
+    + sle15sp3/rpmnfs-000020364.py: Upgrading an RPM reports cpio chmod failed (bsc#1189394)
+
+-------------------------------------------------------------------
 Tue Jul 27 21:18:37 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.0.6
