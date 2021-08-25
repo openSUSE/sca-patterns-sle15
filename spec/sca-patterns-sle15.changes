@@ -1,4 +1,9 @@
 -------------------------------------------------------------------
+Wed Aug 25 22:58:37 UTC 2021 - Jason Record <jason.record@suse.com>
+
+- Fixed metadata tags in scc-registered.py
+
+-------------------------------------------------------------------
 Wed Aug 25 21:54:46 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Updates to version 1.0.7

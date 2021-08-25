@@ -1,4 +1,4 @@
-# 
+ 
 # spec file for package sca-patterns-sle15
 #
 # Copyright (c) 2017-2021 SUSE LINUX GmbH, Nuernberg, Germany.
