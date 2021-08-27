@@ -64,10 +64,10 @@ use constant LIMIT_OPT_MEMYEL   => 85;           # Megabytes of free RAM; yellow
 # Check Free Memory and Disk Swapping
 sub checkMemUsed() {
 	SDP::Core::printDebug('> checkMemUsed');
-	use constant MEM_USED_FIELD   => 2;
-	use constant MEM_TOTAL_FIELD  => 1;
-	use constant SWAP_FIELD       => 2;
-	use constant FIELDS_REQUIRED  => 15;
+	use constant MEM_AVAILABLE_FIELD => -1;
+	use constant MEM_TOTAL_FIELD     => 1;
+	use constant SWAP_FIELD          => 2;
+	use constant FIELDS_REQUIRED     => 15;
 	my $FILE_OPEN     = 'basic-health-check.txt';
 	my @CONTENT       = ();
 	my @LINE_ARRAY    = ();
@@ -114,7 +114,7 @@ sub checkMemUsed() {
 	$HEADER_LINES     = 2;
 	@CONTENT          = ();
 	my $MEM_USED_PCT  = 0;
-	my $MEM_USED      = 0;
+	my $MEM_AVAILABLE = 0;
 	my $MEM_TOTAL     = -1;
 	# get memory information
 	if ( SDP::Core::getSection($FILE_OPEN, $SECTION, \@CONTENT) ) {
@@ -126,11 +126,9 @@ sub checkMemUsed() {
 			@LINE_ARRAY = split(/\s+/, $_);
 			if      ( $LINE_ARRAY[0] =~ m/^Mem/ ) {
 				$MEM_TOTAL = $LINE_ARRAY[MEM_TOTAL_FIELD];
-			} elsif ( $LINE_ARRAY[0] =~ m/^-/ ) {
-				$MEM_USED  = $LINE_ARRAY[MEM_USED_FIELD];
+				$MEM_AVAILABLE = $LINE_ARRAY[MEM_AVAILABLE_FIELD];
 			}
-			$MEM_USED_PCT = sprintf("%u", ($MEM_USED/$MEM_TOTAL*100));
-			SDP::Core::printDebug("  checkMemUsed LINE $LINE", "[$MEM_USED/$MEM_TOTAL/$MEM_USED_PCT\%] $_");
+			$MEM_USED_PCT = sprintf("%u", (($MEM_TOTAL-$MEM_AVAILABLE)*100/$MEM_TOTAL));
 		}
 	} else {
 		SDP::Core::updateStatus(STATUS_ERROR, "Cannot find \"$SECTION\" section in $FILE_OPEN");

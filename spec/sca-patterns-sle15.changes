@@ -1,9 +1,10 @@
 -------------------------------------------------------------------
-Fri Aug 27 13:42:51 UTC 2021 - Jason Record <jason.record@suse.com>
+Fri Aug 27 14:48:55 UTC 2021 - Jason Record <jason.record@suse.com>
 
 - Renamed pattern files for filename standard
   + renamed: patterns/SLE/sle15all/scc-expired.py -> patterns/SLE/sle15all/bhc-scc-expired.py
   + renamed: patterns/SLE/sle15all/scc-registered.py -> patterns/SLE/sle15all/bhc-scc-registered.py
+- Fixed percent used calculation in SLES15 for bhc-memused-00001.pl (bsc#1189889)
 
 -------------------------------------------------------------------
 Wed Aug 25 22:58:37 UTC 2021 - Jason Record <jason.record@suse.com>
