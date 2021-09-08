@@ -2,7 +2,7 @@
 
 # Title:       Check for missing LVM UUIDs
 # Description: Physical volumes can be removed or damaged and appear missing. This pattern looks for missing physical volumes.
-# Modified:    2021 May 19
+# Modified:    2021 Sep 08
 
 ##############################################################################
 #  Copyright (C) 2013,2012-2021 SUSE LLC
@@ -80,7 +80,7 @@ sub check_missing_uuids {
 		SDP::Core::updateStatus(STATUS_ERROR, "Cannot find \"$SECTION\" section in $FILE_OPEN");
 	}
 	if ( $RCODE ) {
-		SDP::Core::updateStatus(STATUS_CRITICAL, "Missing LVM disk with UUID $LINE_CONTENT[5]");
+		SDP::Core::updateStatus(STATUS_CRITICAL, "Missing LVM disk with UUID $LINE_CONTENT[-1]");
 	} else {
 		SDP::Core::updateStatus(STATUS_ERROR, "All LVM disk UUIDs found");
 	}
