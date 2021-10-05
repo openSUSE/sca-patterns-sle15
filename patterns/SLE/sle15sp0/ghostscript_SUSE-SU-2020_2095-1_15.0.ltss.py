@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for ghostscript SUSE-SU-2020:2095-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

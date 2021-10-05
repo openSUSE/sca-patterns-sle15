@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019579
 # Description: Passthrough of Raid Controller to KVM guest results in NMI and unresponsiveness on host

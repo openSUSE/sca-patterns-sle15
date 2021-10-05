@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019707
 # Description: systemd-tmpfiles-setup.service failed after upgrade from SLES 11 SP4 to SLES 15

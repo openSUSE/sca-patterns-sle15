@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for nginx SUSE-SU-2021:1792-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

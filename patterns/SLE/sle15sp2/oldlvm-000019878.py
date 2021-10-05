@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019878
 # Description: Physical Volume is using an old PV header
@@ -72,7 +72,7 @@ def oldMetadata():
 OLD_DEVS = {}
 
 if( oldMetadata() ):
-	Core.updateStatus(Core.WARN, "Detected LVM PV devices with old metadata: " + ' '.join(OLD_DEVS.keys()))
+	Core.updateStatus(Core.WARN, "Detected LVM PV devices with old metadata: " + ' '.join(list(OLD_DEVS.keys())))
 else:
 	Core.updateStatus(Core.IGNORE, "No outdated LVM PV metadata found")
 

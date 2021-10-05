@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for libssh2_org SUSE-SU-2019:2900-2
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

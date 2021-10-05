@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019884
 # Description: Executing multipath -ll on Optane memory based pmem devices returns HDIO_GETGEO failed with 25

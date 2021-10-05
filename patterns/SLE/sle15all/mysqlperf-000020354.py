@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020354
 # Description: mysqld segfault when the system is under stress

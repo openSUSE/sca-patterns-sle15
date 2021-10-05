@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for qemu SUSE-SU-2021:2213-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP3

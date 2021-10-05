@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020364
 # Description: Upgrading an RPM reports cpio chmod failed

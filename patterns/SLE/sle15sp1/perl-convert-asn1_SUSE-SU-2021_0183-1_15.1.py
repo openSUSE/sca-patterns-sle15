@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for perl-Convert-ASN1 SUSE-SU-2021:0183-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP1

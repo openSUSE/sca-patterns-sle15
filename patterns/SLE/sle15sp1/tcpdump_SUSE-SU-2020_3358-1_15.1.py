@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for tcpdump SUSE-SU-2020:3358-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP1

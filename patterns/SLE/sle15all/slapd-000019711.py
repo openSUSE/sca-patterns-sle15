@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019711
 # Description: slapd.service not enabled/failed after upgrade from SLES 11 SP4 to SLES 15

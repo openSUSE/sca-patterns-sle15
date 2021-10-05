@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Low Security Announcement for giflib SUSE-SU-2021:1409-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP2

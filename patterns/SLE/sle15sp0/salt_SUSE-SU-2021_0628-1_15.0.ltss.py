@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Critical Security Announcement for salt SUSE-SU-2021:0628-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

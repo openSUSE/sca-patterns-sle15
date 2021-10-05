@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for python-urllib3 SUSE-SU-2020:3723-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP2

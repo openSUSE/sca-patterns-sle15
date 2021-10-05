@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020295
 # Description: DASD partitions not recognized on SLES 15 SP3 KVM guest
@@ -103,7 +103,7 @@ if( 's390' in SERVER['Architecture'].lower() ):
 		if( kvm() ):
 			partitionless_devices = partitionlessVirtio()
 			if( len(partitionless_devices) > 0 ):
-				Core.updateStatus(Core.WARN, "Evaluate for possible partitionless DASD devices: " + ' '.join(partitionless_devices.keys()))
+				Core.updateStatus(Core.WARN, "Evaluate for possible partitionless DASD devices: " + ' '.join(list(partitionless_devices.keys())))
 			else:
 				Core.updateStatus(Core.IGNORE, "All virtio disks have partitions")
 		else:

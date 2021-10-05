@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       TID000019637, cpupower
 # Description: Pattern for TID000019637

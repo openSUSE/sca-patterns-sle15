@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       No System Log Service
 # Description: no syslog service after upgrade from SLES 11 SP4 to SLES 15

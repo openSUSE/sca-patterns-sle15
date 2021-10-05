@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       dmesg CCP and PSP messages
 # Description: dmesg shows CCP and PSP initialization failure related messages

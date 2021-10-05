@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Unsupported V3 Key
 # Description: zypper or rpm warns about unsupported V3 key after upgrade

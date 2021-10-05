@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for lz4 SUSE-SU-2021:1825-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP3

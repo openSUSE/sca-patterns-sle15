@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for tomcat SUSE-SU-2020:2045-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

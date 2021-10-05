@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for libproxy SUSE-SU-2020:2901-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

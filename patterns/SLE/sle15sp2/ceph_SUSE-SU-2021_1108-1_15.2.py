@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for ceph SUSE-SU-2021:1108-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP2

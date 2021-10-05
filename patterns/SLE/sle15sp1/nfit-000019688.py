@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019688
 # Description: dmesg shows NFIT related messages after updating the kernel

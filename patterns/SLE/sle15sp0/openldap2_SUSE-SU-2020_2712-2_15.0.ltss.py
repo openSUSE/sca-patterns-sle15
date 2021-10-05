@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for openldap2 SUSE-SU-2020:2712-2
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

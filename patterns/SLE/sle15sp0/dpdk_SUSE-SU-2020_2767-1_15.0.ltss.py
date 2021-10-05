@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Critical Security Announcement for dpdk SUSE-SU-2020:2767-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

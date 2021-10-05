@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for python-waitress SUSE-SU-2020:3269-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

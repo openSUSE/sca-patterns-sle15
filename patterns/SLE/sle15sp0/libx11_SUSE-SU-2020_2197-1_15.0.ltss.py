@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for libX11 SUSE-SU-2020:2197-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

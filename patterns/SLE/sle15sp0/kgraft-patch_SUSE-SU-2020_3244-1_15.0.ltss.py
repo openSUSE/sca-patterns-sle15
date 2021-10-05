@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Critical Security Announcement for kgraft-patch SUSE-SU-2020:3244-1
 # Description: Security fixes for SUSE Linux Kernel Live Patch 15 SP0 LTSS
