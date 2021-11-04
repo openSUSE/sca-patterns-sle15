@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019739
 # Description: BIOS update failure when an update is performed using the Linux .bin files

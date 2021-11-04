@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019889
 # Description: System with FCoE connected devices fails to boot randomly due to wicked ordering cycle problems

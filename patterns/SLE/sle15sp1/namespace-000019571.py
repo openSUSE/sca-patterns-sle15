@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019571
 # Description: Activation of multiple namespaces simultaneously may lead to an activation failure

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for nvptx-tools SUSE-SU-2020:2947-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP0 LTSS

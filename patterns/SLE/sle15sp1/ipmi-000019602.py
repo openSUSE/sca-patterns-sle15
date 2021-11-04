@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019602
 # Description: IPMI driver can be unloaded when being accessed by user space

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       TID000019883, iscsiadm
 # Description: Pattern for TID000019883

@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Low Security Announcement for ipvsadm SUSE-SU-2021:1599-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP3

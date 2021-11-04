@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for python SUSE-SU-2020:3597-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP3

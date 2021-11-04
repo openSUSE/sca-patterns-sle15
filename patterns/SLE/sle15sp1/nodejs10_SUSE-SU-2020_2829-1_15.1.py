@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Important Security Announcement for nodejs10 SUSE-SU-2020:2829-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP1

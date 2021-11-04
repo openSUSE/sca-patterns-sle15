@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for tpm2.0-tools SUSE-SU-2021:1998-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP3

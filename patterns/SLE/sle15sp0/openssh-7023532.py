@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       openssh patch breaks gssapi
 # Description: OpenSSH maintenance update breaks GSSAPI login

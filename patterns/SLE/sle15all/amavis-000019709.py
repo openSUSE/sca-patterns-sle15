@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Amavis Virus Scanner failed start
 # Description: amavis.service failed to start after upgrade

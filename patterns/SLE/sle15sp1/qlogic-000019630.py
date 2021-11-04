@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019630
 # Description: System crashes when the system is rebooted with SR-IOV enabled QLogic cards

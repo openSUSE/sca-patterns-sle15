@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000019537
 # Description: A kernel message shows EDAC amd64 Error F0 not found, device 0x1460 broken BIOS

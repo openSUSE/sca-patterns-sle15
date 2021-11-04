@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Moderate Security Announcement for kgraft-patch SUSE-SU-2021:1755-1
 # Description: Security fixes for SUSE Linux Kernel Live Patch 15 SP2

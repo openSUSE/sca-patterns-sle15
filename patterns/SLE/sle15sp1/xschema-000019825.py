@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # Title:       Graphic Interface Failure
 # Description: Graphic interface no longer working after patches

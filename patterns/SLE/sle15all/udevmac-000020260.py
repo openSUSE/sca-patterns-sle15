@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020260
 # Description: systemd-udevd Could not generate persistent MAC address for br0 No such file or directory
@@ -79,7 +79,7 @@ def bbIface(CHK_IFACE):
 
 MACMSGS = getMacMessages()
 AFFECTED = []
-for IFACE in MACMSGS.keys():
+for IFACE in list(MACMSGS.keys()):
 	if( bbIface(IFACE) ):
 		AFFECTED.append(IFACE)
 

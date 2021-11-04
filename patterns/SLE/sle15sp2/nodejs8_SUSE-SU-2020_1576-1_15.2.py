@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Critical Security Announcement for nodejs8 SUSE-SU-2020:1576-1
 # Description: Security fixes for SUSE Linux Enterprise 15 SP2

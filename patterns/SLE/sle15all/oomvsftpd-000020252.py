@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #
 # Title:       Pattern for TID000020252
 # Description: vsftpd and other processes terminated due to OOM scenario
