@@ -1,8 +1,9 @@
 -------------------------------------------------------------------
-Wed May 18 17:23:38 UTC 2022 - Jason Record <jason.record@suse.com>
+Fri May 20 18:38:52 UTC 2022 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.5.1
-  + IRQ vectory affinity issue, pattern for bsc#1182254
+  + IRQ vectory affinity issue
+  + TID000020653 NFS mount attempt with vers=n returns invalid argument or incorrect mount option
 
 -------------------------------------------------------------------
 Fri May  6 15:46:42 UTC 2022 - Jason Record <jason.record@suse.com>
