@@ -1,8 +1,9 @@
 -------------------------------------------------------------------
-Tue Jul  5 18:33:59 UTC 2022 - Jason Record <jason.record@suse.com>
+Wed Jul  6 16:19:20 UTC 2022 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.5.2
   + Check setup-sca php version mismatch (bsc#1201011)
+  + SCA schema pattern check
 
 -------------------------------------------------------------------
 Fri May 20 18:38:52 UTC 2022 - Jason Record <jason.record@suse.com>
