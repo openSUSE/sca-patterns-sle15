@@ -1,9 +1,10 @@
 -------------------------------------------------------------------
-Wed Jul  6 16:19:20 UTC 2022 - Jason Record <jason.record@suse.com>
+Wed Jul  6 19:32:05 UTC 2022 - Jason Record <jason.record@suse.com>
 
 - Changes in version 1.5.2
   + Check setup-sca php version mismatch (bsc#1201011)
-  + SCA schema pattern check
+  + SCA schema pattern check (tid#000020689)
+  + kernel crashes at nfs4_get_valid_delegation (tid#000020688)
 
 -------------------------------------------------------------------
 Fri May 20 18:38:52 UTC 2022 - Jason Record <jason.record@suse.com>
