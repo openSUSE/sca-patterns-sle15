@@ -1,8 +1,9 @@
 -------------------------------------------------------------------
-Tue Oct 25 15:07:49 UTC 2022 - jason.record@suse.com
+Tue Oct 25 17:02:59 UTC 2022 - jason.record@suse.com
 
 - Changes in version 1.5.3
-  - New regular patterns (5)
+  - New regular patterns (6)
+    + sle15all/nmiconfig-000020754.py: Pattern for TID000020754
     + sle15sp2/kmpdracut-000020799.py: Pattern for TID000020799
     + sle15sp3/kmpdracut-000020799.py: Pattern for TID000020799
     + sle15sp3/sssdad-000020793.py: Pattern for TID000020793
