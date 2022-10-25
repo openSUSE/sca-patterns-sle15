@@ -2,10 +2,10 @@
 
 # Title:       Basic Health Check - CPU Load
 # Description: Processes Waiting for Run Queue (Kernel Load)
-# Modified:    2013 Dec 09
+# Modified:    2022 Oct 25
 #
 ##############################################################################
-# Copyright (C) 2013 SUSE LLC
+# Copyright (C) 2013,2022 SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 # along with this program; if not, see <http://www.gnu.org/licenses/>.
 #
 #  Authors/Contributors:
-#   Jason Record (jrecord@suse.com)
+#   Jason Record <jason.record@suse.com>
 #
 ##############################################################################
 
@@ -51,7 +51,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 ##############################################################################
 
 def getCPUCount():
-	fileOpen = "proc.txt"
+	fileOpen = "hardware.txt"
 	section = "/proc/cpuinfo"
 	content = {}
 	CPUS = 0
