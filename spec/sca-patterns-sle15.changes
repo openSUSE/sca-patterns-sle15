@@ -1,8 +1,9 @@
 -------------------------------------------------------------------
-Tue Oct 25 22:34:06 UTC 2022 - jason.record@suse.com
+Wed Oct 26 13:57:03 UTC 2022 - jason.record@suse.com
 
 - Changes in version 1.5.3
   - sle15all/bhc-kernelload-00001.py fixed divison by zero (bsc#1204721)
+  - sle15all/lvmsnapshot-000019858.py KeyError (bsc#1204724)
   - New regular patterns (6)
     + sle15all/nmiconfig-000020754.py: Pattern for TID000020754
     + sle15sp2/kmpdracut-000020799.py: Pattern for TID000020799

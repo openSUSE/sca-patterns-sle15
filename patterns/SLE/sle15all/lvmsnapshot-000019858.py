@@ -4,10 +4,10 @@
 # Description: LVM snapshot changed state to Invalid and should be removed
 # Source:      Package Version Pattern Template v0.3.3
 # Options:     SLE,LVM,Snapshot,lvmsnapshot,000019858,0,2,0,0
-# Modified:    2021 Apr 28
+# Modified:    2022 Oct 26
 #
 ##############################################################################
-# Copyright (C) 2021 SUSE LLC
+# Copyright (C) 2021,2022 SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -65,17 +65,23 @@ def getLVMSnapshots():
 	VOLTYPE = 0
 	LVM_LV = 0
 	LVM_VG = 1
+	IN_STATE = False
+	find_state = re.compile("^.*LV.*VG")
 
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:
-				ENTRY = line.split()
-				if( ENTRY[ATTRIBUTES][VOLTYPE].lower() == 's' ): # Snapshot found
-					LVM_KEY = str(ENTRY[LVM_LV]) + "-" + str(ENTRY[LVM_VG])
-					if( len(ENTRY) > SNAPDATA ): # Checks for the snapshot data field
-						SNAPS[LVM_KEY] = [ENTRY[ATTRIBUTES],int(ENTRY[SNAPDATA].split('.')[0])]
-					else:
-						SNAPS[LVM_KEY] = [ENTRY[ATTRIBUTES],0]
+				if IN_STATE:
+					ENTRY = line.split()
+					if( ENTRY[ATTRIBUTES].lower().startswith('s') ): # Snapshot found
+						LVM_KEY = str(ENTRY[LVM_LV]) + "-" + str(ENTRY[LVM_VG])
+						if( len(ENTRY) > SNAPDATA ): # Checks for the snapshot data field
+							SNAPS[LVM_KEY] = [ENTRY[ATTRIBUTES],int(ENTRY[SNAPDATA].split('.')[0])]
+						else:
+							SNAPS[LVM_KEY] = [ENTRY[ATTRIBUTES],0]
+				elif find_state.search(line):
+					IN_STATE = True
+#	print("SNAPS = " + str(SNAPS))
 	if( len(SNAPS) > 0 ):
 		return True
 	else:
@@ -102,7 +108,7 @@ def parseSnapshots():
 #		print(SNAPS[key][ATTRIBUTES])
 #		print(SNAPS[key][USED_DATA])
 #		print(SNAPS[key][ATTRIBUTES][LVM_STATE])
-		if( SNAPS[key][USED_DATA] > SS_MAX_VALUE ):
+		if( SNAPS[key][USED_DATA] >= SS_MAX_VALUE ):
 			SS_MAX = key
 			SS_MAX_VALUE = SNAPS[key][USED_DATA]
 		if( SNAPS[key][ATTRIBUTES][LVM_STATE] == LVM_STATE_INVALID ):
