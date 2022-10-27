@@ -1,7 +1,8 @@
 -------------------------------------------------------------------
-Wed Oct 26 13:57:03 UTC 2022 - jason.record@suse.com
+Thu Oct 27 10:40:33 UTC 2022 - jason.record@suse.com
 
 - Changes in version 1.5.3
+  - Updated category in btrfsmaster-000018779.py (bsc#1188138)
   - sle15all/bhc-kernelload-00001.py fixed divison by zero (bsc#1204721)
   - sle15all/lvmsnapshot-000019858.py KeyError (bsc#1204724)
   - New regular patterns (6)
