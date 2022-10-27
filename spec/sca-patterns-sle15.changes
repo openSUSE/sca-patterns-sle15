@@ -1,11 +1,12 @@
 -------------------------------------------------------------------
-Thu Oct 27 10:40:33 UTC 2022 - jason.record@suse.com
+Thu Oct 27 17:24:28 UTC 2022 - jason.record@suse.com
 
 - Changes in version 1.5.3
   - Updated category in btrfsmaster-000018779.py (bsc#1188138)
   - sle15all/bhc-kernelload-00001.py fixed divison by zero (bsc#1204721)
   - sle15all/lvmsnapshot-000019858.py KeyError (bsc#1204724)
-  - New regular patterns (6)
+  - New regular patterns (7)
+    + sle15all/vimerr-000020735.py: Pattern for TID000020735
     + sle15all/nmiconfig-000020754.py: Pattern for TID000020754
     + sle15sp2/kmpdracut-000020799.py: Pattern for TID000020799
     + sle15sp3/kmpdracut-000020799.py: Pattern for TID000020799
