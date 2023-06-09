@@ -1,4 +1,13 @@
 -------------------------------------------------------------------
+Fri Jun  9 14:56:20 UTC 2023 - jason.record@suse.com
+
+- Changes in version 1.5.3
+  - New regular patterns (3)
+    + sle15sp2/freeused-000020894.py: Pattern for TID000020894
+    + sle15sp3/freeused-000020894.py: Pattern for TID000020894
+    + sle15sp4/freeused-000020894.py: Pattern for TID000020894
+
+-------------------------------------------------------------------
 Thu Oct 27 17:24:28 UTC 2022 - jason.record@suse.com
 
 - Changes in version 1.5.3
