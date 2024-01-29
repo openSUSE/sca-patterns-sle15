@@ -2,10 +2,10 @@
 
 # Title:       No System Log Service
 # Description: no syslog service after upgrade from SLES 11 SP4 to SLES 15
-# Modified:    2021 Mar 27
+# Modified:    2024 Jan 29
 #
 ##############################################################################
-# Copyright (C) 2021, SUSE LLC
+# Copyright (C) 2021-2024, SUSE LLC
 ##############################################################################
 #
 # This program is free software; you can redistribute it and/or modify
@@ -69,7 +69,10 @@ def upgraded():
 ##############################################################################
 PACKAGE_SYSLOG = 'rsyslog'
 
-if( SUSE.packageInstalled(PACKAGE_SYSLOG) ):
+SERVER = SUSE.getHostInfo()
+if( "enterprise micro" in SERVER['Distro'].lower() ):
+	Core.updateStatus(Core.ERROR, "Not appliable to SLE Micro")
+elif( SUSE.packageInstalled(PACKAGE_SYSLOG) ):
 	Core.updateStatus(Core.IGNORE, "The " + PACKAGE_SYSLOG + " package is installed")
 else:
 	if( upgraded() ):
