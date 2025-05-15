@@ -56,7 +56,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 def gssapiEnabled():
 	FILE_OPEN = "ssh.txt"
 	SECTION = "sshd_config"
-	GSSAPI = re.compile("^GSSAPIAuthentication.*yes", re.IGNORECASE)
+	GSSAPI = re.compile(r"^GSSAPIAuthentication.*yes", re.IGNORECASE)
 	CONTENT = []
 	if Core.getRegExSection(FILE_OPEN, SECTION, CONTENT):
 		for LINE in CONTENT:

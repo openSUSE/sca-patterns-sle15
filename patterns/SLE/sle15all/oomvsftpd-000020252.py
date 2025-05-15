@@ -50,7 +50,7 @@ def wordAroundApplied():
 	fileOpen = "etc.txt"
 	section = "vsftpd.conf"
 	content = []
-	CONFIRMED = re.compile("isolate_network=NO", re.IGNORECASE)
+	CONFIRMED = re.compile(r"isolate_network=NO", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:
@@ -64,7 +64,7 @@ def instancesExceeded():
 	fileOpen = "systemd.txt"
 	section = "systemd-cgls --no-pager --all --full"
 	content = []
-	CONFIRMED = re.compile("vsftpd .*vsftpd.conf", re.IGNORECASE)
+	CONFIRMED = re.compile(r"vsftpd .*vsftpd.conf", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:
@@ -80,7 +80,7 @@ def vsftpdOOMFound():
 	fileOpen = "boot.txt"
 	section = "dmesg -T"
 	content = []
-	CONFIRMED = re.compile("vsftpd invoked oom-killer", re.IGNORECASE)
+	CONFIRMED = re.compile(r"vsftpd invoked oom-killer", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

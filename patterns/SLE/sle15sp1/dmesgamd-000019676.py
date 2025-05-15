@@ -55,7 +55,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 def amdCPU():
 	fileOpen = "hardware.txt"
 	section = "/proc/cpuinfo"
-	AMD = re.compile("vendor_id.*:.*AMD.*", re.IGNORECASE)
+	AMD = re.compile(r"vendor_id.*:.*AMD.*", re.IGNORECASE)
 	content = {}
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
@@ -67,7 +67,7 @@ def errorsFound():
 	fileOpen = "boot.txt"
 	section = "/bin/dmesg"
 	content = {}
-	ERRORS = re.compile("CCP initialization failed|PSP Initialization failed", re.IGNORECASE)
+	ERRORS = re.compile(r"CCP initialization failed|PSP Initialization failed", re.IGNORECASE)
 	content = {}
 	if Core.getSection(fileOpen, section, content):
 		for line in content:

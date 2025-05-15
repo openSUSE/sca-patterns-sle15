@@ -50,7 +50,7 @@ def configChange():
 	fileOpen = "y2log.txt"
 	section = "YaST2/config_diff.*log"
 	content = []
-	CONFIRMED = re.compile("Changed configuration file.*for openldap2-[0-9]", re.IGNORECASE)
+	CONFIRMED = re.compile(r"Changed configuration file.*for openldap2-[0-9]", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:
@@ -62,7 +62,7 @@ def upgraded():
 	fileOpen = "y2log.txt"
 	section = "y2start.log"
 	content = []
-	UPGRADE = re.compile("Upgrade.*1", re.IGNORECASE)
+	UPGRADE = re.compile(r"Upgrade.*1", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if UPGRADE.search(line):

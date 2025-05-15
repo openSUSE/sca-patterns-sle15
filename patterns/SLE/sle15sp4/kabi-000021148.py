@@ -48,7 +48,7 @@ Core.init(meta_class, meta_category, meta_component, pattern_id, primary_link, o
 def third_party_driver():
 	file_open = "modules.txt"
 	content = {}
-	confirmed = re.compile("external|no", re.IGNORECASE)
+	confirmed = re.compile(r"external|no", re.IGNORECASE)
 	Core.listSections(file_open, content)
 	for line in content:
 		modcmd = content[line]

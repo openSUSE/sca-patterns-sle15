@@ -57,8 +57,8 @@ def graphical_target():
 
 def vmware_guest():
 	virtualization = SUSE.getBasicVirtualization()
-	vmhyp = re.compile("VMware", re.IGNORECASE)
-	vmid = re.compile("Virtual Machine", re.IGNORECASE)
+	vmhyp = re.compile(r"VMware", re.IGNORECASE)
+	vmid = re.compile(r"Virtual Machine", re.IGNORECASE)
 	if vmhyp.search(virtualization['Hypervisor']):
 		if vmid.search(virtualization['Identity']):
 			return True

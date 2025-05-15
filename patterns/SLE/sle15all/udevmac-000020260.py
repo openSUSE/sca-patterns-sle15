@@ -52,7 +52,7 @@ def getMacMessages():
 	section = "bin/journalctl --no-pager --boot"
 	content = []
 	FOUND = {}
-	CONFIRMED = re.compile("systemd-udevd.*Could not generate persistent MAC address for.*No such file or directory", re.IGNORECASE)
+	CONFIRMED = re.compile(r"systemd-udevd.*Could not generate persistent MAC address for.*No such file or directory", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:
@@ -65,7 +65,7 @@ def bbIface(CHK_IFACE):
 	section = "ethtool -i " + CHK_IFACE
 	content = []
 	FOUND = {}
-	CONFIRMED = re.compile("driver:.*bridge|driver:.*bonding", re.IGNORECASE)
+	CONFIRMED = re.compile(r"driver:.*bridge|driver:.*bonding", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

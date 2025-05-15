@@ -51,7 +51,7 @@ def drbd_configured():
 	file_open = "ha.txt"
 	section = "/crm configure show"
 	content = []
-	confirmed = re.compile("primitive.*ocf:linbit:drbd", re.IGNORECASE)
+	confirmed = re.compile(r"primitive.*ocf:linbit:drbd", re.IGNORECASE)
 	configured = False
 	in_state = False
 	if Core.isFileActive(file_open):
@@ -72,8 +72,8 @@ def invalid_resource_handlers():
 	file_open = "drbd.txt"
 	section = "/drbdadm dump"
 	content = []
-	confirmed = re.compile("^resource .* {", re.IGNORECASE)
-	handlers = re.compile(" fence-peer .* /lib/drbd/| after-resync-target .* /lib/drbd/", re.IGNORECASE)
+	confirmed = re.compile(r"^resource .* {", re.IGNORECASE)
+	handlers = re.compile(r" fence-peer .* /lib/drbd/| after-resync-target .* /lib/drbd/", re.IGNORECASE)
 	status = False
 	in_state = False
 	this_resource= ''

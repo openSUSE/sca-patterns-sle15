@@ -53,7 +53,7 @@ def oldMetadata():
 	section = "/sbin/pvs"
 	content = []
 	DEVICE_NAME = 2
-	CONFIRMED = re.compile("WARNING.*PV.*in VG.*is using an old PV header", re.IGNORECASE)
+	CONFIRMED = re.compile(r"WARNING.*PV.*in VG.*is using an old PV header", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

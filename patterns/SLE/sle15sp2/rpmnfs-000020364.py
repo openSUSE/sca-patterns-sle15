@@ -61,7 +61,7 @@ def installError():
 	fileOpen = "messages.txt"
 	section = "/var/log/messages"
 	content = []
-	CONFIRMED = re.compile("RPM.*install filesystem.*: failure", re.IGNORECASE)
+	CONFIRMED = re.compile(r"RPM.*install filesystem.*: failure", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

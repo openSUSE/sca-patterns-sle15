@@ -52,7 +52,7 @@ def conditionConfirmed():
 	fileOpen = "hardware.txt"
 	section = "hwinfo"
 	content = []
-	CONFIRMED = re.compile("/dev/ipmi", re.IGNORECASE)
+	CONFIRMED = re.compile(r"/dev/ipmi", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):

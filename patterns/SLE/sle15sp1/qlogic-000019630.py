@@ -52,7 +52,7 @@ def conditionConfirmed():
 	fileOpen = "hardware.txt"
 	section = "lspci"
 	content = []
-	CONFIRMED = re.compile("QL41", re.IGNORECASE)
+	CONFIRMED = re.compile(r"QL41", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):

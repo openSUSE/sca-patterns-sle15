@@ -51,7 +51,7 @@ def conditionConfirmed():
 	fileOpen = "boot.txt"
 	section = "dmesg"
 	content = []
-	CONFIRMED = re.compile("Affinity broken due to vector space exhaustion", re.IGNORECASE)
+	CONFIRMED = re.compile(r"Affinity broken due to vector space exhaustion", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):

@@ -57,7 +57,7 @@ def upgraded():
 	fileOpen = "y2log.txt"
 	section = "y2start.log"
 	content = []
-	UPGRADE = re.compile("Upgrade.*1", re.IGNORECASE)
+	UPGRADE = re.compile(r"Upgrade.*1", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if UPGRADE.search(line):

@@ -59,7 +59,7 @@ def errorFound():
 	fileOpen = "messages.txt"
 	section = "/var/log/messages"
 	content = {}
-	ERROR_MSG = re.compile("gnome-session-binary.*GLib-GIO-ERROR.*No GSettings schemas are installed on the system", re.IGNORECASE)
+	ERROR_MSG = re.compile(r"gnome-session-binary.*GLib-GIO-ERROR.*No GSettings schemas are installed on the system", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if ERROR_MSG.search(content[line]):

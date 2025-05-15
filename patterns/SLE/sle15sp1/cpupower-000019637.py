@@ -49,7 +49,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 def conditionConfirmed():
 	fileOpen = "hardware.txt"
 	section = "/proc/cpuinfo"
-	AMD = re.compile("vendor_id.*:.*amd.*", re.IGNORECASE)
+	AMD = re.compile(r"vendor_id.*:.*amd.*", re.IGNORECASE)
 	content = {}
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
