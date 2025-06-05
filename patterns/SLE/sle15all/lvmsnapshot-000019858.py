@@ -66,7 +66,7 @@ def getLVMSnapshots():
 	LVM_LV = 0
 	LVM_VG = 1
 	IN_STATE = False
-	find_state = re.compile("^.*LV.*VG")
+	find_state = re.compile(r"^.*LV.*VG")
 
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):

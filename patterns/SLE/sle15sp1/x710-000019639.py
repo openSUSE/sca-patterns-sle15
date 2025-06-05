@@ -50,7 +50,7 @@ def x710Controller():
 	fileOpen = "hardware.txt"
 	section = "lspci"
 	content = {}
-	CONFIRMED = re.compile("Intel Corporation Ethernet Controller x710", re.IGNORECASE)
+	CONFIRMED = re.compile(r"Intel Corporation Ethernet Controller x710", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(content[line]):
@@ -61,7 +61,7 @@ def conditionConfirmed():
 	fileOpen = "boot.txt"
 	section = "/dmesg"
 	content = {}
-	CONFIRMED = re.compile("i40e.*probe of.*failed with error -11", re.IGNORECASE)
+	CONFIRMED = re.compile(r"i40e.*probe of.*failed with error -11", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(content[line]):

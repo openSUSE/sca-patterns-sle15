@@ -50,7 +50,7 @@ def segFaultFound():
 	fileOpen = "boot.txt"
 	section = "dmesg -T"
 	content = []
-	CONFIRMED = re.compile("mysqld.*segfault at.*ip.*sp.*error.*in mysqld", re.IGNORECASE)
+	CONFIRMED = re.compile(r"mysqld.*segfault at.*ip.*sp.*error.*in mysqld", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

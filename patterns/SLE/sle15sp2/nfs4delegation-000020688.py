@@ -57,7 +57,7 @@ def nfsCrashFound():
 	fileOpen = "boot.txt"
 	section = "dmesg -T"
 	content = []
-	CONFIRMED = re.compile("RIP:.*nfs4_get_valid_delegation.*[nfsv4]")
+	CONFIRMED = re.compile(r"RIP:.*nfs4_get_valid_delegation.*[nfsv4]")
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):

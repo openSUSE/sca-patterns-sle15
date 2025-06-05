@@ -51,7 +51,7 @@ def kvm():
 	fileOpen = "systemd.txt"
 	section = "hostnamectl status"
 	content = []
-	CONFIRMED = re.compile("Virtualization.*kvm", re.IGNORECASE)
+	CONFIRMED = re.compile(r"Virtualization.*kvm", re.IGNORECASE)
 	if( Core.isFileActive(fileOpen) ):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:
@@ -69,7 +69,7 @@ def partitionlessVirtio():
 	IDX_LAST = -1
 	disks = {}
 	virtdisk = ''
-	DISKRE = re.compile(" vd[a-z]*$", re.IGNORECASE)
+	DISKRE = re.compile(r" vd[a-z]*$", re.IGNORECASE)
 	if( Core.isFileActive(fileOpen) ):
 		if Core.getRegExSection(fileOpen, section, content):
 			# get the disks without their partition

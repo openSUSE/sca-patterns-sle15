@@ -51,7 +51,7 @@ def packages_installed(package_list):
 	content = []
 	found = 0
 	required = len(package_list)
-	confirmed = re.compile("", re.IGNORECASE)
+	confirmed = re.compile(r"", re.IGNORECASE)
 	if Core.isFileActive(file_open):
 		if Core.getRegExSection(file_open, section, content):
 			for line in content:
@@ -70,7 +70,7 @@ def nsswitch_configured():
 	content = []
 	found = 0
 	required = 2
-	confirmed = re.compile("passwd:.*compat.*sss|group:.*compat.*sss", re.IGNORECASE)
+	confirmed = re.compile(r"passwd:.*compat.*sss|group:.*compat.*sss", re.IGNORECASE)
 	if Core.isFileActive(file_open):
 		if Core.getRegExSection(file_open, section, content):
 			for line in content:
@@ -90,7 +90,7 @@ def kerberos_configured():
 	found = {}
 	required = 3
 	config_section = ''
-	confirmed = re.compile("default_realm.*=.*[a-zA-Z0-9]|default_ccache_name.*=.*[a-zA-Z0-9]|admin_server.*=.*[a-zA-Z0-9]", re.IGNORECASE)
+	confirmed = re.compile(r"default_realm.*=.*[a-zA-Z0-9]|default_ccache_name.*=.*[a-zA-Z0-9]|admin_server.*=.*[a-zA-Z0-9]", re.IGNORECASE)
 	if Core.isFileActive(file_open):
 		if Core.getRegExSection(file_open, section, content):
 			for line in content:
@@ -155,7 +155,7 @@ def errors_found():
 	file_open = "sssd.txt"
 	section = "/ldap_child.log"
 	content = []
-	confirmed = re.compile("Failed to init credentials:.*Client", re.IGNORECASE)
+	confirmed = re.compile(r"Failed to init credentials:.*Client", re.IGNORECASE)
 	if Core.isFileActive(file_open):
 		if Core.getRegExSection(file_open, section, content):
 			for line in content:

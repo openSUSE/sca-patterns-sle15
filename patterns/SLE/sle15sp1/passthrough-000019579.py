@@ -52,7 +52,7 @@ def conditionConfirmed():
 	fileOpen = "filename.txt"
 	section = "CommandToIdentifyFileSection"
 	content = []
-	CONFIRMED = re.compile("", re.IGNORECASE)
+	CONFIRMED = re.compile(r"", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):

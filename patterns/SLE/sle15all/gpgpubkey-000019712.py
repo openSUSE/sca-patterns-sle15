@@ -58,7 +58,7 @@ def unsupportedV3key():
 	fileOpen = "rpm.txt"
 	section = "rpm.*uniq"
 	content = []
-	CONFIRMED = re.compile("warning: Unsupported version of key: V3", re.IGNORECASE)
+	CONFIRMED = re.compile(r"warning: Unsupported version of key: V3", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):
@@ -71,7 +71,7 @@ def getV3Key():
 	fileOpen = "updates.txt"
 	section = "patch-check"
 	content = []
-	CONFIRMED = re.compile("gpg-pubkey-", re.IGNORECASE)
+	CONFIRMED = re.compile(r"gpg-pubkey-", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

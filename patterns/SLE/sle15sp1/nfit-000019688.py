@@ -51,7 +51,7 @@ def symbolErrors():
 	fileOpen = "boot.txt"
 	section = "/dmesg"
 	content = []
-	CONFIRMED = re.compile("nfit:.*Unknown symbol nvdimm_blk_region_create|nfit:.*Unknown symbol nvdimm_region_notify|nfit:.*Unknown symbol to_nvdimm_bus", re.IGNORECASE)
+	CONFIRMED = re.compile(r"nfit:.*Unknown symbol nvdimm_blk_region_create|nfit:.*Unknown symbol nvdimm_region_notify|nfit:.*Unknown symbol to_nvdimm_bus", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

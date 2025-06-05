@@ -52,21 +52,21 @@ def scaConfigured():
 	CONFIGURED = True
 	content = []
 	section = "/etc/sca/sdbroker.conf"
-	CONFIRMED = re.compile("Run setup-sdbroker", re.IGNORECASE)
+	CONFIRMED = re.compile(r"Run setup-sdbroker", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):
 				CONFIGURED = False
 	content = []
 	section = "/etc/sca/sdagent.conf"
-	CONFIRMED = re.compile("Run sdagent-config", re.IGNORECASE)
+	CONFIRMED = re.compile(r"Run sdagent-config", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):
 				CONFIGURED = False
 	content = []
 	section = "/etc/sca/sdp.conf"
-	CONFIRMED = re.compile("Run setup-sdp", re.IGNORECASE)
+	CONFIRMED = re.compile(r"Run setup-sdp", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):

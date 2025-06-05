@@ -52,7 +52,7 @@ def netDev():
 	fileOpen = "fs-diskio.txt"
 	section = "/etc/fstab"
 	content = []
-	CONFIRMED = re.compile("_netdev", re.IGNORECASE)
+	CONFIRMED = re.compile(r"_netdev", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):
@@ -63,7 +63,7 @@ def wickedError():
 	fileOpen = "boot.txt"
 	section = "journalctl.*--boot"
 	content = []
-	CONFIRMED = re.compile("wickedd-nanny.*Interface.getManagedObjects failed", re.IGNORECASE)
+	CONFIRMED = re.compile(r"wickedd-nanny.*Interface.getManagedObjects failed", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):

@@ -50,7 +50,7 @@ def nfsversConfig():
 	fileOpen = "etc.txt"
 	section = "/etc/nfsmount.conf"
 	content = []
-	CONFIRMED = re.compile("^nfsvers.*=", re.IGNORECASE)
+	CONFIRMED = re.compile(r"^nfsvers.*=", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:
@@ -62,7 +62,7 @@ def errorFound():
 	fileOpen = "boot.txt"
 	section = "dmesg -T"
 	content = []
-	CONFIRMED = re.compile("NFS.*mount option vers=3 does not support minorversion=1", re.IGNORECASE)
+	CONFIRMED = re.compile(r"NFS.*mount option vers=3 does not support minorversion=1", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

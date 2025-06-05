@@ -52,7 +52,7 @@ def PowerEdge():
 	fileOpen = "basic-environment.txt"
 	section = "Virtualization"
 	content = []
-	CONFIRMED = re.compile("Hardware.*PowerEdge", re.IGNORECASE)
+	CONFIRMED = re.compile(r"Hardware.*PowerEdge", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):
@@ -63,7 +63,7 @@ def errorFound():
 	fileOpen = "boot.txt"
 	section = "/dmesg"
 	content = []
-	CONFIRMED = re.compile("EDAC amd64.*Error.*F0 not found.*device.*broken BIOS", re.IGNORECASE)
+	CONFIRMED = re.compile(r"EDAC amd64.*Error.*F0 not found.*device.*broken BIOS", re.IGNORECASE)
 	if Core.getRegExSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(line):

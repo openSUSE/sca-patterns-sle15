@@ -51,7 +51,7 @@ def mpioPmemErrors():
 	fileOpen = "mpio.txt"
 	section = "bin/multipath -ll"
 	content = []
-	CONFIRMED = re.compile("pmem.*HDIO_GETGEO failed with 25", re.IGNORECASE)
+	CONFIRMED = re.compile(r"pmem.*HDIO_GETGEO failed with 25", re.IGNORECASE)
 	if Core.isFileActive(fileOpen):
 		if Core.getRegExSection(fileOpen, section, content):
 			for line in content:

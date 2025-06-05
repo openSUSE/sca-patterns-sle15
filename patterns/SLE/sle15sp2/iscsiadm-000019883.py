@@ -50,7 +50,7 @@ Core.init(META_CLASS, META_CATEGORY, META_COMPONENT, PATTERN_ID, PRIMARY_LINK, O
 def conditionConfirmed():
 	fileOpen = "messages.txt"
 	content = {}
-	CONFIRMED = re.compile("systemd-coredump.*iscsiadm|iscsiadm.*segfault", re.IGNORECASE)
+	CONFIRMED = re.compile(r"systemd-coredump.*iscsiadm|iscsiadm.*segfault", re.IGNORECASE)
 	section = "/var/log/messages"
 	if Core.getSection(fileOpen, section, content):
 		for line in content:

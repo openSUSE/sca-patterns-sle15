@@ -49,8 +49,8 @@ def kmp_package_found():
 	file_open = "rpm.txt"
 	section = "rpm -qa --queryformat.*NAME}"
 	content = []
-	confirmed = re.compile("kmp-", re.IGNORECASE)
-	exception_list = re.compile("^dpdk-kmp-default |^oracleasm-kmp-default |^crash-kmp-default |^lttng-modules-kmp-default |^reiserfs-kmp-default |^cluster-md-kmp-default |^dlm-kmp-default |^drbd-kmp-default |^gfs2-kmp-default |^ocfs2-kmp-default ", re.IGNORECASE)
+	confirmed = re.compile(r"kmp-", re.IGNORECASE)
+	exception_list = re.compile(r"^dpdk-kmp-default |^oracleasm-kmp-default |^crash-kmp-default |^lttng-modules-kmp-default |^reiserfs-kmp-default |^cluster-md-kmp-default |^dlm-kmp-default |^drbd-kmp-default |^gfs2-kmp-default |^ocfs2-kmp-default ", re.IGNORECASE)
 	if Core.isFileActive(file_open):
 		if Core.getRegExSection(file_open, section, content):
 			for line in content:

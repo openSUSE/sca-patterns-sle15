@@ -51,7 +51,7 @@ def conditionConfirmed():
 	fileOpen = "basic-environment.txt"
 	section = "Virtualization"
 	content = {}
-	CONFIRMED = re.compile("PowerEdge.*R240|PowerEdge.*R340|PowerEdge.*T140|PowerEdge.*T340", re.IGNORECASE)
+	CONFIRMED = re.compile(r"PowerEdge.*R240|PowerEdge.*R340|PowerEdge.*T140|PowerEdge.*T340", re.IGNORECASE)
 	if Core.getSection(fileOpen, section, content):
 		for line in content:
 			if CONFIRMED.search(content[line]):
